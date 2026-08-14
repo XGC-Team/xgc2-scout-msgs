@@ -47,6 +47,7 @@ ownership:
   - /opt/ros/noetic/share/scout_msgs
   - /opt/ros/noetic/include/scout_msgs
 release:
+  repository: XGC-Team/xgc2-scout-msgs
   workflow: release.yml
   apt_versions:
     bionic: 0.3.3-11

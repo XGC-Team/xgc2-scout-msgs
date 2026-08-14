@@ -11,7 +11,7 @@
 
   <license>BSD</license>
 
-  <url type="repository">https://github.com/lxk36/xgc2-scout-msgs</url>
+  <url type="repository">https://github.com/XGC-Team/xgc2-scout-msgs</url>
 
   <buildtool_depend>catkin</buildtool_depend>
   <build_depend>message_generation</build_depend>
