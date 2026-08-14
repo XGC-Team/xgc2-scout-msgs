@@ -29,22 +29,22 @@ jobs:
       matrix:
         include:
           - ros_distro: melodic
-            image: ros:melodic-ros-base-bionic
+            image: ghcr.io/xgc-team/xgc2-images/xgc2-build-bionic-ros-melodic:1.0.0
             apt_distribution: bionic
             arch: amd64
             runner: ubuntu-latest
           - ros_distro: melodic
-            image: ros:melodic-ros-base-bionic
+            image: ghcr.io/xgc-team/xgc2-images/xgc2-build-bionic-ros-melodic:1.0.0
             apt_distribution: bionic
             arch: arm64
             runner: ubuntu-24.04-arm
           - ros_distro: noetic
-            image: ros:noetic-ros-base-focal
+            image: ghcr.io/xgc-team/xgc2-images/xgc2-build-focal-ros-noetic:1.0.0
             apt_distribution: focal
             arch: amd64
             runner: ubuntu-latest
           - ros_distro: noetic
-            image: ros:noetic-ros-base-focal
+            image: ghcr.io/xgc-team/xgc2-images/xgc2-build-focal-ros-noetic:1.0.0
             apt_distribution: focal
             arch: arm64
             runner: ubuntu-24.04-arm
