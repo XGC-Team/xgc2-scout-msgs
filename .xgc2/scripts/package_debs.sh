@@ -94,9 +94,12 @@ Priority: optional
 Architecture: ${ARCH}
 Maintainer: XGC2 <apt@example.com>
 Depends: ros-${ROS_DISTRO}-message-runtime, ros-${ROS_DISTRO}-std-msgs
+Conflicts: ros-${ROS_DISTRO}-xgc2-agilex-scout-msgs
+Replaces: ros-${ROS_DISTRO}-xgc2-agilex-scout-msgs
+Provides: ros-${ROS_DISTRO}-xgc2-agilex-scout-msgs
 Description: AgileX Scout ROS message definitions
  ROS ${ROS_DISTRO} scout_msgs package kept compatible with the recovered
- vehicle Scout base driver.
+ vehicle Scout base driver. Replaces the retired vehicle-tree fork.
 EOF
 
 cat > "${PKG_ROOT}/usr/share/doc/${PACKAGE}/README" <<EOF
