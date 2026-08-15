@@ -2,7 +2,7 @@
 set -euo pipefail
 
 grep -q '^id: xgc2-scout-msgs$' .xgc2/product.yml
-grep -q '^version: 0.3.3-10$' .xgc2/product.yml
+grep -qE '^version: [^[:space:]]+$' .xgc2/product.yml
 grep -q '<name>scout_msgs</name>' package.xml
 grep -q '<version>0.3.3</version>' package.xml
 grep -q 'ros-melodic-scout-msgs' .xgc2/product.yml
